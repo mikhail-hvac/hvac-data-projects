@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+
+# OpenModelica / FMU / симуляции
+*.fmu
+*.mat
+*.res
+*.log
+*.debug
+
+# Carrier HAP / временные файлы
+*.tmp
+*.bak
+
+# Obsidian
+.obsidian/
