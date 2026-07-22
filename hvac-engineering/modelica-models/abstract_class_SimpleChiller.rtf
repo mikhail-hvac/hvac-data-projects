@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red191\green191\blue191;\red26\green26\blue26;\red249\green249\blue249;
+}
+{\*\expandedcolortbl;;\csgray\c79525;\cssrgb\c13333\c13333\c13333;\cssrgb\c98039\c98039\c98039;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww24800\viewh10540\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth8860\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth10400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \uc0\u1091 \u1095 \u1077 \u1073 \u1085 \u1080 \u1082 \cell 
+\pard\intbl\itap1\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \uc0\u1084 \u1086 \u1081  ("\u1072 \u1073 \u1089 \u1090 \u1088 \u1072 \u1082 \u1090 \u1085 \u1099 \u1081 "?) \u1082 \u1083 \u1072 \u1089 \u1089  "\u1095 \u1080 \u1083 \u1083 \u1077 \u1088 "\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth8860\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth10400\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf2 \clbrdrl\brdrs\brdrw20\brdrcf2 \clbrdrb\brdrs\brdrw20\brdrcf2 \clbrdrr\brdrs\brdrw20\brdrcf2 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 model SimpleSpring\
+  parameter Real k = 1000;  // \uc0\u1078 \u1077 \u1089 \u1090 \u1082 \u1086 \u1089 \u1090 \u1100  \u1087 \u1088 \u1091 \u1078 \u1080 \u1085 \u1099 \
+  Real x;  // \uc0\u1089 \u1084 \u1077 \u1097 \u1077 \u1085 \u1080 \u1077 \
+  Real F;  // \uc0\u1089 \u1080 \u1083 \u1072 , \u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1091 \u1102 \u1097 \u1072 \u1103  \u1085 \u1072  \u1087 \u1088 \u1091 \u1078 \u1080 \u1085 \u1091 \
+equation\
+  F = k * x;  // \uc0\u1089 \u1080 \u1083 \u1072  \u1087 \u1088 \u1086 \u1087 \u1086 \u1088 \u1094 \u1080 \u1086 \u1085 \u1072 \u1083 \u1100 \u1085 \u1072  \u1089 \u1084 \u1077 \u1097 \u1077 \u1085 \u1080 \u1102 \
+end SimpleSpring;
+\f2\fs32 \
+\pard\intbl\itap1\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 model SimpleChiller\
+  parameter Real NPLV = 1000;  // The Non-Standard Part Load Value (NPLV) is a weighted metric measuring a chiller's efficiency at partial capacities under non-standard operating conditions (result of Polynomial approximation)\
+  Real Qx;  // Required cooling capacity of chiller at exact part load condition, kW\
+  Real Ne;  // Chillers' power consumption at exact part load condition, kW\
+equation\
+  Ne = Qx * NPLV;\
+end SimpleChiller;
+\f2\fs32 \
+\pard\intbl\itap1\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \cell \lastrow\row
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+}
